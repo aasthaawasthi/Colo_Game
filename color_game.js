@@ -55,12 +55,12 @@ function reset(){
     pickedColor = pickColor(); 
     //change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
-    this.textContent = "New colors";
+    resetButton.textContent = "New colors"; // you have written this.textContent="New Colors",most of the time it creates problem so preferred to use this when function is not written externally.
     messageDisplay.textContent = "";
     //change colors of squares
     for(var i = 0; i < squares.length; i++){
         if(colors[i]){
-            squares[i].style.backgroundColor = "block"; 
+            squares[i].style.display = "block"; // you had written squares[i].style.backgroundColor="block",block is not a color its a display property.
             squares[i].style.backgroundColor = colors[i];
         } else{
              squares[i].style.display = "none";
@@ -108,3 +108,7 @@ resetButton.addEventListener("click", function(){
     return "rgb(" + r + ", " + g + ", " + b + ")";
  }
 
+
+
+
+ //FOR ANY ISSUE CONTACT ME :- 9873528916.
