@@ -107,8 +107,3 @@ resetButton.addEventListener("click", function(){
     var b = Math.floor(Math.random() * 256);
     return "rgb(" + r + ", " + g + ", " + b + ")";
  }
-
-
-
-
- //FOR ANY ISSUE CONTACT ME :- 9873528916.
